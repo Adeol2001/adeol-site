@@ -11,6 +11,6 @@
        <h1> About US &hearts;</h1>
 
        <p> <a href="/"> Page d'acceuil</a> </p>
-       <p> &copy; Copyright {{ date('Y') }} &middot; </p>
+       <p> &copy; Copyright {{ date('Y') }} &middot; <a href="/about-us"> About us </a>   </p>
     </body>
 </html>

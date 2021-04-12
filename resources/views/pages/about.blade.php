@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('base')
 
-        <title>About-US</title>
+@section('title','About US | '. config('app.name'))
 
-    </head>
-    <body>
-       <h1> About US &hearts;</h1>
+@section('content')
+  
+  <img src="{{ asset('img/Bpng.jpg') }}" alt="Image" class="mt-12 rounded shadow-md h-25">
 
-       <p> <a href="/"> Page d'acceuil</a> </p>
-       <p> &copy; Copyright {{ date('Y') }} &middot; <a href="/about-us"> About us </a>   </p>
-    </body>
-</html>
+  <h1 class="mb-5 text-gray-700"> About US <span class="text-pink-500"> &hearts;</span> </h1>
+
+  <p class="text-indigo-500 hover:text-indigo-600 underline"> <a href="{{ route('n_home') }}"> Page d'acceuil</a> </p>
+      
+@endsection

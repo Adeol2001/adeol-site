@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('base')
 
-        <title>Laravel</title>
+@section('content')
 
-    </head>
-    <body>
-       <h1> Hello page 1</h1>
-       <p> heure est {{ date('h:i A') }}</p>
-       <p> &copy; Copyright {{ date('Y') }} &middot; <a href="/about-us"> About us </a>   </p>
-    </body>
-</html>
+  <img src="{{ asset('img/Apng.jpg') }}" alt="Image" class="mt-12 rounded shadow-md h-35">
+
+  <h1 class="mt-5 text-3xl sm:text-5xl font-semibold text-indigo-600" > Hello page 1</h1>
+
+  <p class="mt-5 text-lg text-gray-800"> heure est {{ date('h:i A') }}</p>
+
+@endsection
